@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Raushan Portfolio</title>
+        <style>
+            .nav-bar {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    box-shadow: 0 3px 10px gray;
+}
+
+.nav-bar h1 {
+    color: white;
+}
+
+.nav-bar a {
+    color: white;
+}
+
+.nav-bar a:hover {
+    color: cyan;
+}
+            .section {
+    padding: 50px 20px;
+    min-height: 250px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+
+/* Section ke background colors */
+#home {
+    background-color: lightblue;
+}
+
+#about {
+    background-color: lightgreen;
+}
+
+#skills {
+    background-color: lightyellow;
+}
+
+#projects {
+    background-color: lightpink;
+}
+
+#contact {
+    background-color: lavender;
+}
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            /* Fixed navbar so it stays on top while scrolling */
+            .nav-bar {
+                background-color: rgb(248, 192, 255);
+                position: sticky;
+                top: 0;
+                padding-bottom: 5px;
+            }
+            h1 {
+                color: cyan;
+                font-size: 36px;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                padding-top: 5px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            ul {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding: 5px;
+                list-style-type: none;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            a:hover {
+                color: blue;
+            }
+            .section {
+                padding: 50px 20px;
+                min-height: 250px;
+                border-bottom: 1px solid #ddd;
+            }
+        </style>  
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+         
+        <div class="nav-bar">
+            <h1> Raushan Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- HOME SECTION -->
+         
+        <div id="home" class="section">
+            <h2>Home</h2>
+            <p>Hi, I am Raushan! Welcome to my personal portfolio website</p>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi I did my bachelors in Coimbatore with computer science background.</p>
+        </div>
+
+        <!-- SKILLS SECTION -->
+
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML / CSS</li>
+                <li>Python</li>
+                <li>SQL / Databases</li>
+                <li>Java <script></script></li>
+            </ul>
+        </div>
+
+        <!-- PROJECTS SECTION -->
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <h3><p>Project 1: Online Wbex job portal Web Appliction</p></h3><br>
+            <p>Project 2: Online food delivery website</p>
+
+            
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>GitHub: <a href="https://github.com" target="_blank">github.com/your-username</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/your-profile</a></p>
+        </div>
+
+    </body>
+</html>
