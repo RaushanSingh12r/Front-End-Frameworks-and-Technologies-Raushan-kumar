@@ -1,0 +1,421 @@
+<html>
+<head>
+    <title>Semantic Department Website - Alliance University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(16, 210, 197, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+            font-family: sans-serif;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        nav li {
+            list-style-type: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: brown;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            scroll-margin-top: 120px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-family: monospace;
+            color: brown;
+            text-shadow: 2px 4px 8px gray;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #4b2c5e;
+            font-size: 24px;
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        article.highlights-container {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .img-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+            border: 3px solid black;
+            box-shadow: 4px 6px 10px gray;
+            object-fit: cover;
+        }
+
+        .labels-grid {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 15px;
+        }
+
+        .labels-grid p {
+            font-weight: bold;
+            color: #4b2c5e;
+            width: 200px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(105, 84, 125, 0.9);
+            color: white;
+        }
+
+        ul {
+            list-style-position: inside;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        address {
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea, button {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #5a0000;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semantic Dep Website</h1>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Department</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+    <!--HOME SECTION-->
+
+        <section id="home">
+            <p>Welcome to the Department of Computer Applications. We aim to deliver world-class technical education, fostering continuous research, development, and innovative skillsets for future software engineers.</p>
+            <h2>Dear MCA Graduates, Welcome to AU</h2>
+            <h3>Highlights</h3>
+            <article class="highlights-container">
+                <div class="img-grid">
+                    <img src="./alexandra_koch-ai-7977960_1920.jpg.jpeg" alt="Cyber Security">
+                    <img src="./pexels-coding-1841550.jpg" alt="Data Science">
+                    <img src="./riki32-scam-7503835_1920.jpg" alt="Artificial Intelligence">
+                    <img src="./this_is_engineering-engineer-4690505.jpg.jpeg" alt="Game Development">
+                </div>
+                <div class="labels-grid">
+                    <p>Cyber Security</p>
+                    <p>Data Science</p>
+                    <p>Artificial & Machine</p>
+                    <p>Game Development</p>
+                </div>
+            </article>
+        </section>
+        <!--ABOUT SECTION-->
+
+        <section id="about">
+            <h2>About Department</h2>
+            <article>
+                <h3>Vision</h3>
+               <p>To produce globally competent computer application professionals with cutting-edge capabilities and research skills.</p>
+                
+                <h3>Mission</h3>
+                <p>Providing high-quality computing education through practical training, ethical values, and industry collaboration.</p>
+
+                <h3>Objectives</h3>
+                <ul>
+                    <li>Provide strong theoretical and practical domain knowledge in computing.</li>
+                    <li>Encourage innovative project development and research activities.</li>
+                    <li>Prepare students to adapt to rapid technological disruptions in industry.</li>
+                </ul>
+            </article>
+        </section>
+        <!--FACULTY SECTION-->
+
+        <section id="faculty">
+            <h2>Faculty Members</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Faculty Name</th>
+                        <th>Designation</th>
+                        <th>Subjects Handled</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr.j.Lenin</td>
+                        <td>Professor & HOD</td>
+                        <td>Cyber Security, Ai/ML</td>
+                    </tr>
+                    <tr>
+                        <td>Prof.Oleti durgas bravishu</td>
+                        <td>Associate Professor</td>
+                        <td>Data Science, Machine Learning</td>
+                    </tr>
+                    <tr>
+                        <td>prof.Veera raghavaiah kathula</td>
+                        <td>Assistant Professor</td>
+                        <td>Web Technologies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--COURSES SECTION-->
+
+        <section id="courses">
+            <h2>Courses Offered</h2>
+            
+            <h3>MCA Subjects</h3>
+            <ul>
+                <li>Programming in C / C++/python Etc.</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Web Development Fundamentals</li>
+            </ul>
+
+            <h3>Semester-Wise Subjects (MCA)</h3>
+            <ul>
+                <li><strong>Semester 1:</strong> Python Programming, Operating Systems, Computer Architecture</li>
+                <li><strong>Semester 2:</strong> Java Programming, Database Management Systems, Software Engineering</li>
+                <li><strong>Semester 3:</strong> Cloud Computing, AI & Machine Learning, Web Technologies</li>
+                <li><strong>Semester 4:</strong> Project Work & Internship</li>
+            </ul>
+        </section>
+        <!--TIMETABLE SECTION-->
+
+        <section id="timetable">
+            <h2>Timetable</h2>
+            <h3>Class & Lab Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>09:00 AM - 11:00 AM</th>
+                        <th>11:15 AM - 01:15 PM</th>
+                        <th>02:00 PM - 04:00 PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Technologies</td>
+                        <td>Data Structures</td>
+                        <td>Web Lab (Batch A)</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>DBMS</td>
+                        <td>Machine Learning</td>
+                        <td>Python Lab (Batch B)</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Cyber Security</td>
+                        <td>Cloud Computing</td>
+                        <td>Project Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>AI & Machine Learning</td>
+                        <td>Software Engineering</td>
+                        <td>Java Lab (Batch C)</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Web Technologies</td>
+                        <td>Data Structures</td>
+                        <td>Web Lab (Batch A)</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Cyber Security</td>
+                        <td>Cloud Computing</td>
+                        <td>Project Lab</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+        <!--ACHIEVEMENTS SECTION-->
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <article>
+                <h3>Student Achievements</h3>
+                <p>Students at Alliance University have achieved recognition in academics, sports, innovation, entrepreneurship, and technical competitions. Students have participated in national and international competitions, hackathons, gameathons, research forums, and other co-curricular activities. In the field of immersive technology, students have earned 150+ Unity certifications, completed 30+ industry-oriented internships, and received major recognitions, including First Prize at the GameForge 1.0 National Gameathon and First Place in the Quantum X Game Genesis Competition..</p>
+                
+                <h3>Faculty Achievements</h3>
+                <p>Alliance University has a highly qualified and accomplished faculty with strong academic and research backgrounds. Faculty members have received national and international recognition for their research, publications, awards, patents, and academic contributions. Several professors are recognised among the World’s Top 2% Scientists, while others have secured research grants and contributed to reputed international journals and conferences. The university also supports faculty innovation through research centres, Centres of Excellence, and funded research projects..</p>
+            </article>
+        </section>
+        <!--EVENTS & ACTIVITIES SECTION-->
+
+        <section id="events">
+            <h2>Events & Activities</h2>
+            <ul>
+                <li><strong>Workshops:</strong> Hands-on workshop on Full-Stack Development with Node.js & React.</li>
+                <li><strong>Seminars:</strong> Guest lecture on "Future of Cloud Computing & DevOps".</li>
+                <li><strong>Hackathons:</strong> 24-Hour continuous coding hackathon for IT students.</li>
+            </ul>
+        </section>
+        <!--CONTACT SECTION-->
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                <p><strong>Department Address:</strong> Department of Computer Applications, Alliance University, Main Campus, Bengaluru.</p>
+                <p><strong>Email:</strong> hod.mca@alliance.edu.in</p>
+                <p><strong>Phone:</strong> +91 80 4129 9200</p>
+            </address>
+
+            <h3>Send a Message</h3>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alliance University - Department of Computer Applications. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
