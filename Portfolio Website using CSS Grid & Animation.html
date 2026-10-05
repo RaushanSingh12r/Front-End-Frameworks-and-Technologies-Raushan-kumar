@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+
+        /* Basic CSS */
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background-color: #263238;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            animation: slideDown 1s;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #37474f;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #80cbc4;
+        }
+
+        /* Common Section */
+        section {
+            padding: 50px 10%;
+            animation: fadeIn 1.5s;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #263238;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Skills - CSS Grid */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+            background-color: #e0f2f1;
+        }
+
+        /* Projects - CSS Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .project-card h3 {
+            color: #37474f;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #37474f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #00897b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #263238;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Entry Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 800px) {
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Web Developer | Student | Programmer</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! My name is Raushan.
+                I am a student and beginner web developer.
+                I am interested in HTML, CSS, JavaScript and
+                Data Science.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Web Page Structure</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Website Designing</p>
+            </div>
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Programming</p>
+            </div>
+
+            <div class="skill">
+                <h3>Data Science</h3>
+                <p>Data Analysis</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>
+                    A personal portfolio website
+                    created using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>College Tech Fest</h3>
+                <p>
+                    A responsive college tech fest
+                    website using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Commerce Analysis</h3>
+                <p>
+                    E-commerce sales analysis
+                    using Python and Data Science.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact-form">
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
