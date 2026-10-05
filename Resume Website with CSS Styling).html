@@ -1,0 +1,277 @@
+<html>
+<head>
+    <title>My Resume</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eaf4f4;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #023e8a;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 85%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #0077b6;
+            border-bottom: 2px solid #90e0ef;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #0096c7;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #caf0f8;
+        }
+
+        .skill, .project {
+            background-color: #e7f0e8;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0077b6;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #023e8a;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            section {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+       <h1>MY RESUME</h1>
+        <p>MCA Student</p>
+        <p>Patna, Bihar | rsingh42036@gmail.com  | +91 6206150179</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#internship">Internship</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>
+            Hello! I am an MCA student interested in
+            Software Development, Data Science and AI.
+        </p>
+        <p>
+            I want to develop useful applications
+            and improve my technical skills.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>MCA</td>
+                <td>Alliance University</td>
+                <td>2026 - Present</td>
+            </tr>
+
+            <tr>
+                <td>BCA</td>
+                <td>International School of Management</td>
+                <td>2023 - 2026</td>
+            </tr>
+
+            <tr>
+                <td>Class XII</td>
+                <td>L.S College</td>
+                <td>2021 - 2023</td>
+            </tr>
+
+            <tr>
+                <td>Class X</td>
+                <td>DAV School</td>
+                <td>2013 - 2021</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skill">
+            <h3>HTML & CSS</h3>
+            <p>Web Development</p>
+        </div>
+
+        <div class="skill">
+            <h3>Python</h3>
+            <p>Programming</p>
+        </div>
+
+        <div class="skill">
+            <h3>Data Science</h3>
+            <p>Data Analysis</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>WEBX Job Portal</h3>
+            <p>
+                Developed using HTML, CSS, JavaScript,
+                Node.js, Express.js and MongoDB.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Food Delivery Website</h3>
+            <p>
+                Developed using HTML, CSS,
+                JavaScript and PHP.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>College Event Website</h3>
+            <p>
+                Created using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Personal Portfolio</h3>
+            <p>
+                Developed using HTML, CSS and JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="skill">
+            <h3>Python Programming</h3>
+            <p>Completed basic Python certification.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Power BI</h3>
+            <p>Completed introductory Power BI training.</p>
+        </div>
+    </section>
+
+    <section id="internship">
+        <h2>Internship</h2>
+        <h3>Infosys Training</h3>
+        <p>Duration: 3 Months</p>
+        <p>Learned basic data processing concepts.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Participated in college technical events.</li>
+            <li>Participated in Hackathons.</li>
+            <li>Completed web development projects.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p><b>Email:</b> rsingh42036@gmail.com</p>
+        <p><b>Phone:</b> +91 6206150179</p>
+        <p><b>Location:</b> Bengaluru, Karnataka</p>
+        <p><b>linkedin:</b> <a href="https://www.linkedin.com/in/raushan-singh-889312320?utm_source=share" target="_blank">linkedin.com/in/raushan-kumar</a></p>
+        <a href="resume.pdf" download class="button">
+            Download Resume
+        </a>
+    </section>
+
+    <footer>
+        <p>My Resume | Thank You</p>
+    </footer>
+
+</body>
+</html>
