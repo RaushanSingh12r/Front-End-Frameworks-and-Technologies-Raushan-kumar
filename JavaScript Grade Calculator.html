@@ -1,0 +1,136 @@
+
+<html>
+<head>
+    <title>Grade Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Grade Calculator</h2>
+
+    <input type="text" id="name" placeholder="Student Name">
+
+    <input type="number" id="math" placeholder="Maths Marks">
+    <input type="number" id="science" placeholder="Science Marks">
+    <input type="number" id="english" placeholder="English Marks">
+    <input type="number" id="computer" placeholder="Computer Marks">
+
+    <button onclick="calculate()">Calculate</button>
+    <button onclick="resetForm()">Reset</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function calculate() {
+
+    let name = document.getElementById("name").value;
+
+    let math = Number(document.getElementById("math").value);
+    let science = Number(document.getElementById("science").value);
+    let english = Number(document.getElementById("english").value);
+    let computer = Number(document.getElementById("computer").value);
+
+    if (name == "" || math < 0 || science < 0 || english < 0 || computer < 0 ||
+        math > 100 || science > 100 || english > 100 || computer > 100) {
+
+        alert("Please enter valid details and marks between 0 and 100.");
+        return;
+    }
+
+    let total = math + science + english + computer;
+
+    let average = total / 4;
+
+    let percentage = total / 4;
+
+    let grade;
+
+    if (percentage >= 90) {
+        grade = "A+";
+    }
+    else if (percentage >= 80) {
+        grade = "A";
+    }
+    else if (percentage >= 70) {
+        grade = "B";
+    }
+    else if (percentage >= 60) {
+        grade = "C";
+    }
+    else if (percentage >= 50) {
+        grade = "D";
+    }
+    else {
+        grade = "F";
+    }
+
+    let result;
+
+    if (percentage >= 40) {
+        result = "PASS";
+    }
+    else {
+        result = "FAIL";
+    }
+
+    document.getElementById("result").innerHTML =
+        "<h3>Result</h3>" +
+        "Student Name: " + name + "<br>" +
+        "Total Marks: " + total + " / 400<br>" +
+        "Average: " + average.toFixed(2) + "<br>" +
+        "Percentage: " + percentage.toFixed(2) + "%<br>" +
+        "Grade: " + grade + "<br>" +
+        "Result: " + result;
+}
+
+function resetForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("math").value = "";
+    document.getElementById("science").value = "";
+    document.getElementById("english").value = "";
+    document.getElementById("computer").value = "";
+    document.getElementById("result").innerHTML = "";
+}
+
+</script>
+
+</body>
+</html>
